@@ -21,6 +21,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before{transition:none!important;animation:none!important}}
+html,body{overflow-x:hidden}
 body{font-family:'General Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
@@ -41,7 +42,7 @@ h1,h2,h3{font-family:'Clash Display','General Sans',sans-serif;font-weight:600;l
 .hire:hover{background:var(--accent)}
 
 /* hero */
-.hero{padding:170px 0 110px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero{padding-top:170px;padding-bottom:110px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .hero h1{font-size:clamp(52px,7vw,104px)}
 .hero p{color:var(--muted);font-size:20px;max-width:27em;margin:28px 0 36px}
 .avail{display:inline-flex;align-items:center;gap:10px;font-size:15px;color:var(--muted);margin-bottom:28px}
@@ -73,7 +74,7 @@ h1,h2,h3{font-family:'Clash Display','General Sans',sans-serif;font-weight:600;l
 .skills span{color:var(--muted);font-size:15px}
 
 /* sections */
-.sec{padding:120px 0 0}
+.sec{padding-top:120px}
 .sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:44px}
 .sec-head h2{font-size:clamp(40px,5vw,64px)}
 .sec-head p{color:var(--muted);max-width:30em}
